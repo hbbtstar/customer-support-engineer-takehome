@@ -74,5 +74,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+      {
+    resolve: `gatsby-plugin-parsely-analytics`,
+    options: {
+      apikey: 'https://blissful-lamport-dfd261.netlify.com/',
+      enableInDevelopment: false // send page views when NODE_ENV !== prod
+    }
+  }
   ],
 }
